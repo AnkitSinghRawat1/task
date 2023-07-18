@@ -66,7 +66,7 @@ const Modal = ({ data, closeRec, formSubmit, userData: userD, editMode }) => {
               userData.id != res.id && <option value={res.id}>{res.name}</option>
             ))}
           </select>
-          <hr />
+          <hr  style={{margin: '20px'}}/>
           <button
             disabled={userData.name === "" || userData.parent === "root"}
             style={{ cursor: "pointer" }}
